@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section>
+      <section class="alertBox"></section>
+      <section class="gameWrapper">
+        <button type="submit" name="btn" id="startbtn">Start Game</button>
+        <h1 id="roundTimer"></h1>
+        <section class="gameWrapperInner">
+          <h3 id="gameuser1"></h3>
+          <div id="gameBoard" class="gameBox">
+            <div class="container">
+              <button class="box" id="A0" disabled></button>
+              <button class="box" id="A1" disabled></button>
+              <button class="box" id="A2" disabled></button>
+              <button class="box" id="A3" disabled></button>
+              <button class="box" id="A4" disabled></button>
+              <button class="box" id="A5" disabled></button>
+              <button class="box" id="A6" disabled></button>
+              <button class="box" id="A7" disabled></button>
+              <button class="box" id="A8" disabled></button>
+            </div>
+            <p id="turn" style="text-align: center; letter-spacing: 1px"></p>
+          </div>
+          <h3 id="gameuser2"></h3>
+        </section>
+      </section>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
